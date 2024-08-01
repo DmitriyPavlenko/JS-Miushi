@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miushi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="img/logo.jpg" alt="">
+                <div class="flex-vr">
+                    <h1>Міюши</h1><p>суші і роли</p>
+                </div>
+            </div>
+            <div class="burger"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;}</style></defs><title/><g data-name="Layer 2" id="Layer_2"><path d="M28,10H4A1,1,0,0,1,4,8H28a1,1,0,0,1,0,2Z"/><path d="M28,17H4a1,1,0,0,1,0-2H28a1,1,0,0,1,0,2Z"/><path d="M28,24H4a1,1,0,0,1,0-2H28a1,1,0,0,1,0,2Z"/></g><g id="frame"><rect class="cls-1" height="32" width="32"/></g></svg></div>
+            <a href="" class="address"><i class="fa-solid fa-location-dot"></i>м.Київ, пр.Перемоги 1</a>
+            <a href="mailto:email@gmail.com" class="address"><i class="fa-solid fa-envelope"></i>email@gmail.com</a>
+            <div class="flex-vr phone">
+                <a href="tel:+380501112233" class="tel">+38 (050) 111 2233</a>
+                <p class="work-hours">Працюємо з 11:00 до 23:00</h6>
+            </div>
+            <button class="back-call">зворотній дзвінок</button>
+            <div class="modal-call modal-block none">
+                <div class="card">
+                    <h3>Введіть Ваш телефон:</h3>
+                    <input type="number" name="" id="" placeholder="+38(000)000-0000">
+                    <button class="close-call btn-close">Ми Вам передзвонимо!</button>
+                </div>
+            </div>
+        </header>
+    </div>
+    <!-- <div class="hr"></div> -->
+    <div class="container">
+        <nav class="desktop">
+            <button class="btn-nav">меню</button>
+            <button class="btn-nav">акції та скидки</button>
+            <button class="btn-nav">доставка і оплата</button>
+            <button class="btn-nav"><a href="#new">новини</a></button>
+            <button class="btn-nav"><a href="#contacts">контакти</a></button>
+            <button class="btn-nav" id="account-open"><i class="fa-solid fa-user"></i>кабінет</button>
+                <div class="modal-acc modal-block none">
+                    <div class="card">
+                        <h3>Login:</h3>
+                        <input type="text" placeholder="Type your login">
+                        <h3>Password:</h3>
+                        <input type="text" placeholder="Type your password">
+                        <button class="close-acc btn-close">Close</button>
+                    </div>
+                </div>
+            <button class="btn-nav" id="cart-open"><i class="fa-solid fa-cart-shopping"></i><div class="cart-icon-count">0</div>корзина</button>
+        </nav>
+    </div>
+    <div class="container mobile">
+        <nav>
+            <a href="" class="address"><i class="fa-solid fa-location-dot"></i>м.Київ, пр.Перемоги 1</a>
+            <a href="mailto:email@gmail.com" class="address"><i class="fa-solid fa-envelope"></i>email@gmail.com</a>
+            <div class="flex-vr">
+                <a href="tel:+380501112233" class="tel">+38 (050) 111 2233</a>
+                <p class="work-hours">Працюємо з 11:00 до 23:00</h6>
+            </div>
+            <button class="btn-nav">меню</button>
+            <button class="btn-nav">акції та скидки</button>
+            <button class="btn-nav">доставка і оплата</button>
+            <button class="btn-nav"><a href="#new">новини</a></button>
+            <button class="btn-nav"><a href="#contacts">контакти</a></button>
+            <button class="btn-nav" id="account-open"><i class="fa-solid fa-user"></i>кабінет</button>
+                <div class="modal-acc modal-block none">
+                    <div class="card">
+                        <h3>Login:</h3>
+                        <input type="text" placeholder="Type your login">
+                        <h3>Password:</h3>
+                        <input type="text" placeholder="Type your password">
+                        <button class="close-acc btn-close">Close</button>
+                    </div>
+                </div>
+            <button class="btn-nav" id="cart-open"><i class="fa-solid fa-cart-shopping"></i><div class="cart-icon-count">0</div>корзина</button>
+        </nav>
+    </div>
+    <main>
+        <div class="main-img">
+            <div class="container">
+                <div class="owl-carousel owl-theme" id="slider-main">
+                    <div class="slider-item">
+                        <div class="flex-hr">
+                            <p class="main-text">Щасливі <br> години</p>
+                            <div class="main-circle"><p>знижка<br>15%</p></div>
+                        </div>
+                        <p class="main-time circled">з 11:00 до 16:00 в будні дні</p>
+                        <button>Детальніше</button>
+                    </div>
+                    <div class="slider-item">
+                        <div class="flex-hr">
+                            <p class="main-text">Смачні сніданки</p>
+                        </div>
+                        <p class="main-time">з 09:00 до 11:00 в будні дні</p>
+                        <button>Ранкове меню</button>
+                    </div>
+                    <div class="slider-item">
+                        <p class="main-text"> Доставка безкоштовно!</p><br>
+                        <p class="main-time">* при замовленні від 800 грн.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart">
+            <div class="container">
+                <div class="cart-close"></div>
+                <h2>Корзина</h2>
+                <div class="cart-products"><p>No products yet</p></div>
+                <div class="cart-total">
+                    <p>Всього: <span class="cart-price">0</span>грн.</p>
+                </div>
+            </div>
+        </div>
+        <section class="container sets-wrapper">
+            <h2>Сети</h2>
+            <div class="slider-wrapper">
+                <div class="slider sets"></div>
+            </div>
+            <div class="slider-buttons">
+                <button type="button" class="slider-btn prev" aria-label="see previous slide">
+                    <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32"><path id="Layer" fill="#808080" d="m21.2 5c-0.4-0.4-1.1-0.4-1.6 0-0.4 0.4-0.4 1.1 0 1.6l8 8h-26.5c-0.6 0-1.1 0.5-1.1 1.1 0 0.6 0.5 1.1 1.1 1.1h26.6l-8 8c-0.4 0.4-0.4 1.2 0 1.6 0.4 0.4 1.2 0.4 1.6 0l10-10c0.4-0.4 0.4-1.1 0-1.6z"/></svg>
+                </button>
+                <div class="dot active" data-slide="0"></div>
+                <div class="dot" data-slide="-1"></div>
+                <div class="dot" data-slide="-2"></div>
+                <div class="dot" data-slide="-3"></div>
+                <div class="dot" data-slide="-4"></div>
+                <button type="button" class="slider-btn next" aria-label="see next slide">
+                    <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32"><path id="Layer2" fill="#808080" class="s0" d="m21.2 5c-0.4-0.4-1.1-0.4-1.6 0-0.4 0.4-0.4 1.1 0 1.6l8 8h-26.5c-0.6 0-1.1 0.5-1.1 1.1 0 0.6 0.5 1.1 1.1 1.1h26.6l-8 8c-0.4 0.4-0.4 1.2 0 1.6 0.4 0.4 1.2 0.4 1.6 0l10-10c0.4-0.4 0.4-1.1 0-1.6z"/></svg>
+                </button>
+            </div>
+        </section>
+        <section class="container rolls-wrapper">
+            <h2>Роли</h2>
+            <div class="slider-wrapper">
+                <div class="slider rolls"></div>
+            </div>
+            <div class="slider-buttons">
+                <button type="button" class="slider-btn prev" aria-label="see previous slide">
+                    <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32"><path id="Layer" fill="#808080" d="m21.2 5c-0.4-0.4-1.1-0.4-1.6 0-0.4 0.4-0.4 1.1 0 1.6l8 8h-26.5c-0.6 0-1.1 0.5-1.1 1.1 0 0.6 0.5 1.1 1.1 1.1h26.6l-8 8c-0.4 0.4-0.4 1.2 0 1.6 0.4 0.4 1.2 0.4 1.6 0l10-10c0.4-0.4 0.4-1.1 0-1.6z"/></svg>
+                </button>
+                <div class="dot active" data-slide="0"></div>
+                <div class="dot" data-slide="-1"></div>
+                <div class="dot" data-slide="-2"></div>
+                <div class="dot" data-slide="-3"></div>
+                <div class="dot" data-slide="-4"></div>
+                <button type="button" class="slider-btn next" aria-label="see next slide">
+                    <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32"><path id="Layer2" fill="#808080" class="s0" d="m21.2 5c-0.4-0.4-1.1-0.4-1.6 0-0.4 0.4-0.4 1.1 0 1.6l8 8h-26.5c-0.6 0-1.1 0.5-1.1 1.1 0 0.6 0.5 1.1 1.1 1.1h26.6l-8 8c-0.4 0.4-0.4 1.2 0 1.6 0.4 0.4 1.2 0.4 1.6 0l10-10c0.4-0.4 0.4-1.1 0-1.6z"/></svg>
+                </button>
+            </div>
+        </section>
+        <section class="container pizza-wrapper">
+            <h2>Піцца</h2>
+            <div class="slider-wrapper">
+                <div class="slider pizza"></div>
+            </div>
+            <div class="slider-buttons">
+                <button type="button" class="slider-btn prev" aria-label="see previous slide">
+                    <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32"><path id="Layer" fill="#808080" d="m21.2 5c-0.4-0.4-1.1-0.4-1.6 0-0.4 0.4-0.4 1.1 0 1.6l8 8h-26.5c-0.6 0-1.1 0.5-1.1 1.1 0 0.6 0.5 1.1 1.1 1.1h26.6l-8 8c-0.4 0.4-0.4 1.2 0 1.6 0.4 0.4 1.2 0.4 1.6 0l10-10c0.4-0.4 0.4-1.1 0-1.6z"/></svg>
+                </button>
+                <div class="dot active" data-slide="0"></div>
+                <div class="dot" data-slide="-1"></div>
+                <div class="dot" data-slide="-2"></div>
+                <div class="dot" data-slide="-3"></div>
+                <div class="dot" data-slide="-4"></div>
+                <button type="button" class="slider-btn next" aria-label="see next slide">
+                    <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32"><path id="Layer2" fill="#808080" class="s0" d="m21.2 5c-0.4-0.4-1.1-0.4-1.6 0-0.4 0.4-0.4 1.1 0 1.6l8 8h-26.5c-0.6 0-1.1 0.5-1.1 1.1 0 0.6 0.5 1.1 1.1 1.1h26.6l-8 8c-0.4 0.4-0.4 1.2 0 1.6 0.4 0.4 1.2 0.4 1.6 0l10-10c0.4-0.4 0.4-1.1 0-1.6z"/></svg>
+                </button>
+            </div>
+        </section>
+        <section class="container wok-wrapper">
+            <h2>Wok</h2>
+            <div class="slider-wrapper">
+                <div class="slider wok"></div>
+            </div>
+            <div class="slider-buttons">
+                <button type="button" class="slider-btn prev" aria-label="see previous slide">
+                    <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32"><path id="Layer" fill="#808080" d="m21.2 5c-0.4-0.4-1.1-0.4-1.6 0-0.4 0.4-0.4 1.1 0 1.6l8 8h-26.5c-0.6 0-1.1 0.5-1.1 1.1 0 0.6 0.5 1.1 1.1 1.1h26.6l-8 8c-0.4 0.4-0.4 1.2 0 1.6 0.4 0.4 1.2 0.4 1.6 0l10-10c0.4-0.4 0.4-1.1 0-1.6z"/></svg>
+                </button>
+                <div class="dot active" data-slide="0"></div>
+                <div class="dot" data-slide="-1"></div>
+                <div class="dot" data-slide="-2"></div>
+                <div class="dot" data-slide="-3"></div>
+                <div class="dot" data-slide="-4"></div>
+                <button type="button" class="slider-btn next" aria-label="see next slide">
+                    <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32"><path id="Layer2" fill="#808080" class="s0" d="m21.2 5c-0.4-0.4-1.1-0.4-1.6 0-0.4 0.4-0.4 1.1 0 1.6l8 8h-26.5c-0.6 0-1.1 0.5-1.1 1.1 0 0.6 0.5 1.1 1.1 1.1h26.6l-8 8c-0.4 0.4-0.4 1.2 0 1.6 0.4 0.4 1.2 0.4 1.6 0l10-10c0.4-0.4 0.4-1.1 0-1.6z"/></svg>
+                </button>
+            </div>
+        </section>
+        <section class="news-wrapper" id="new">
+            <div class="container">
+                <h2>Новинки</h2>
+                <div class="slider-wrapper">
+                    <div class="slider news"></div>
+                </div>
+                <div class="slider-buttons">
+                    <button type="button" class="slider-btn prev" aria-label="see previous slide">
+                        <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32"><path id="Layer" fill="#808080" d="m21.2 5c-0.4-0.4-1.1-0.4-1.6 0-0.4 0.4-0.4 1.1 0 1.6l8 8h-26.5c-0.6 0-1.1 0.5-1.1 1.1 0 0.6 0.5 1.1 1.1 1.1h26.6l-8 8c-0.4 0.4-0.4 1.2 0 1.6 0.4 0.4 1.2 0.4 1.6 0l10-10c0.4-0.4 0.4-1.1 0-1.6z"/></svg>
+                    </button>
+                    <div class="dot active" data-slide="0"></div>
+                    <div class="dot" data-slide="-1"></div>
+                    <div class="dot" data-slide="-2"></div>
+                    <div class="dot" data-slide="-3"></div>
+                    <div class="dot" data-slide="-4"></div>
+                    <button type="button" class="slider-btn next" aria-label="see next slide">
+                        <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32"><path id="Layer2" fill="#808080" class="s0" d="m21.2 5c-0.4-0.4-1.1-0.4-1.6 0-0.4 0.4-0.4 1.1 0 1.6l8 8h-26.5c-0.6 0-1.1 0.5-1.1 1.1 0 0.6 0.5 1.1 1.1 1.1h26.6l-8 8c-0.4 0.4-0.4 1.2 0 1.6 0.4 0.4 1.2 0.4 1.6 0l10-10c0.4-0.4 0.4-1.1 0-1.6z"/></svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <section class="container reasons-block">
+                <h2>10 причин купити у нас</h2>
+                <div class="reasons">
+                    <div class="reasons-item">
+                        <img src="img/kitchen.png" alt="">
+                        <p>100% ручна робота</p>
+                    </div>
+                    <div class="reasons-item">
+                        <img src="img/dish.png" alt="">
+                        <p>100% свіжі продукти</p>
+                    </div>
+                    <div class="reasons-item">
+                        <img src="img/money.png" alt="">
+                        <p>Найнижчі ціни на ринку! (без ресторанної націнки)</p>
+                    </div>
+                    <div class="reasons-item">
+                        <img src="img/like.png" alt="">
+                        <p>Постійний контроль якості на всіх етапах</p>
+                    </div>
+                    <div class="reasons-item">
+                        <img src="img/fish.png" alt="">
+                        <p>Тільки охолоджена риба (ніякої заморозки)</p>
+                    </div>
+                    <div class="reasons-item">
+                        <img src="img/rice.png" alt="">
+                        <p>Ми використовуємо тільки дорогий рис з Японії</p>
+                    </div>
+                    <div class="reasons-item">
+                        <img src="img/octopus.png" alt="">
+                        <p>Більше начинки, менше рису!</p>
+                    </div>
+                    <div class="reasons-item">
+                        <img src="img/knife.png" alt="">
+                        <p>Ми не замінюємо авокадо огірком!</p>
+                    </div>
+                    <div class="reasons-item">
+                        <img src="img/pizza.png" alt="">
+                        <p>Вся піца готується з італійської муки та Італійського соусу</p>
+                    </div>
+                    <div class="reasons-item">
+                        <img src="img/leaf.png" alt="">
+                        <p>Ми не використовуємо майонез!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container testimonials">
+            <h2>Відгуки</h2>
+            <div class="testimonials-wrapper">
+                <div class="testimonial">
+                    <div class="testimonial-title">
+                        <img src="./img/testimonial.png" alt="Надія Перемога">
+                        <p><b>Надія Перемога</b><br><span>5 січня 2024 о 12:20</span></p>
+                    </div>
+                    <p class="testimonial-text">Дякую за швидку доставку! Відмінна пізня вечеря після робочого дня.</p>
+                    <img src="./img/testimonial-photo.png" alt="photo">
+                    <div class="testimonial-social">
+                        <div class="testimonial-social-icons">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-message"></i>2
+                            <i class="fa-solid fa-bullhorn"></i>
+                        </div>
+                        <div class="testimonial-facebook"><i class="fa-brands fa-facebook-f"></i>  Поділитися</div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-title">
+                        <img src="./img/testimonial.png" alt="Надія Перемога">
+                        <p><b>Надія Перемога</b><br><span>5 січня 2024 о 12:20</span></p>
+                    </div>
+                    <p class="testimonial-text">Дякую за швидку доставку! Відмінна пізня вечеря після робочого дня.</p>
+                    <img src="./img/testimonial-photo.png" alt="photo">
+                    <div class="testimonial-social">
+                        <div class="testimonial-social-icons">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-message"></i>2
+                            <i class="fa-solid fa-bullhorn"></i>
+                        </div>
+                        <div class="testimonial-facebook"><i class="fa-brands fa-facebook-f"></i>  Поділитися</div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-title">
+                        <img src="./img/testimonial.png" alt="Надія Перемога">
+                        <p><b>Надія Перемога</b><br><span>5 січня 2024 о 12:20</span></p>
+                    </div>
+                    <p class="testimonial-text">Дякую за швидку доставку! Відмінна пізня вечеря після робочого дня.</p>
+                    <img src="./img/testimonial-photo.png" alt="photo">
+                    <div class="testimonial-social">
+                        <div class="testimonial-social-icons">
+                            <i class="fa-solid fa-heart"></i>
+                            <i class="fa-solid fa-message"></i>2
+                            <i class="fa-solid fa-bullhorn"></i>
+                        </div>
+                        <div class="testimonial-facebook"><i class="fa-brands fa-facebook-f"></i>  Поділитися</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacts" id="contacts">
+            <div class="contacts-img"> 
+                <div class="contacts-wrapper container">
+                    <p>Є запитання?</p>
+                    <h1>Залиште свої контакти</h1>
+                    <div class="flex-hr">
+                        <input type="text" placeholder="Ім'я">
+                        <input type="text" placeholder="Телефон">
+                        <button>відправити</button>
+                    </div>
+                    <h4>Натискаючи на кнопку «Надіслати», ви даєте згоду на обробку своїх персональних даних.</h4>
+                </div>
+            </div>     
+        </section>
+    </main> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script> 
+    <script type="module" src="js/script.js"></script>   
+</body>
+</html>
